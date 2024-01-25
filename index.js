@@ -21,7 +21,8 @@ mongoose
   });
 
 app.use(express.json());
-app.use(cors("https://tejendrasinh6844.github.io/netflixLama/api"));
+app.use(cors({
+  origin:"https://tejendrasinh6844.github.io/netflixLama/api"}));
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);
