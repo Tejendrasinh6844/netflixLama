@@ -21,13 +21,15 @@ mongoose
   });
 
 app.use(express.json());
-app.use(cors({
-  origin:"https://tejendrasinh6844.github.io/netflixLama/api"}));
+// app.use(cors({
+//   // origin:"http://localhost:3001",
+//   origin:"http://localhost:3000"}));
+app.use(cors());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);
 app.use("/api/lists", listRoute);
 
-app.listen(3000, () => {
+app.listen(4000, () => {
   console.log("Backend server is running!");
 });
