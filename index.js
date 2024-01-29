@@ -21,10 +21,8 @@ mongoose
   });
 
 app.use(express.json());
-// app.use(cors({
-//   // origin:"http://localhost:3001",
-//   origin:"http://localhost:3000"}));
-app.use(cors());
+app.use(cors({
+  origin:"https://cozy-babka-22d142.netlify.app"}));
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);
