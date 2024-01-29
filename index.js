@@ -22,7 +22,7 @@ mongoose
 
 app.use(express.json());
 app.use(cors({
-  origin:"https://cozy-babka-22d142.netlify.app"}));
+  origin:"https://cozy-babka-22d142.netlify.app/"}));
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);
