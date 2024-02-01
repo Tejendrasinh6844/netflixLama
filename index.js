@@ -24,7 +24,8 @@ app.use(express.json());
 app.use(cors({
   // origin:"https://cozy-babka-22d142.netlify.app/api"
 // origin : "http://localhost:3000",
-origin : 'https://cozy-babka-22d142.netlify.app/api'
+origin : 'https://cozy-babka-22d142.netlify.app/api',
+origin: 'https://main--majestic-brioche-4bc8f8.netlify.app/api/auth/register'
 
 }));
 app.use("/api/auth", authRoute);
