@@ -23,8 +23,8 @@ mongoose
 app.use(express.json());
 app.use(cors({
 // origin : "http://localhost:3000",
-// origin : 'https://cozy-babka-22d142.netlify.app/api',
-origin : '*',
+origin : 'https://cozy-babka-22d142.netlify.app/api',
+// origin : '*',
 
 }));
 app.use("/api/auth", authRoute);
@@ -32,6 +32,6 @@ app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);
 app.use("/api/lists", listRoute);
 
-// app.listen(4000, () => {
-//   console.log("Backend server is running!");
-// });
+app.listen(4000, () => {
+  console.log("Backend server is running!");
+});
